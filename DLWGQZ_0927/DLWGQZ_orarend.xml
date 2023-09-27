@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DLWGQZ_orarend>
+    <!-- Hétfő-->
+    <ora id="1" tipus="ea">
+        <targy tnev="Fizika II."></targy>
+        <idopont>
+            <nap nnev="Hétfő"></nap>
+            <tol tolnev="8:00"></tol>
+            <ig ignev="10:00"></ig>
+        </idopont>
+        <helyszin hnev="XXX. A1/305."></helyszin>
+        <oktato oknev="Dr. Pszota Gábor"></oktato>
+        <szak sznev="Mérnökinformatikus"></szak>
+    </ora>
+
+    <ora id="2" tipus="gyak">
+        <targy tnev="Fizika II."></targy>
+        <idopont>
+            <nap nnev="Hétfő"></nap>
+            <tol tolnev="10:00"></tol>
+            <ig ignev="12:00"></ig>
+        </idopont>
+        <helyszin hnev="A1/12."></helyszin>
+        <oktato oknev="Nagy Ádám"></oktato>
+        <szak sznev="Mérnökinformatikus"></szak>
+    </ora>
+
+    <ora id="3" tipus="gyak">
+        <targy tnev="Idegennyelv 1."></targy>
+        <idopont>
+            <nap nnev="Hétfő"></nap>
+            <tol tolnev="12:00"></tol>
+            <ig ignev="14:00"></ig>
+        </idopont>
+        <helyszin hnev="A5/202."></helyszin>
+        <oktato oknev="Vitányiné Varga Erika"></oktato>
+        <szak sznev="Mérnökinformatikus"></szak>
+    </ora>
+
+    <ora id="4" tipus="ea">
+        <targy tnev="WEB technológiák 1."></targy>
+        <idopont>
+            <nap nnev="Hétfő"></nap>
+            <tol tolnev="14:00"></tol>
+            <ig ignev="16:00"></ig>
+        </idopont>
+        <helyszin hnev="XXX. A1/305."></helyszin>
+        <oktato oknev="Agárdi Anita"></oktato>
+        <szak sznev="Mérnökinformatikus"></szak>
+    </ora>
+
+    <ora id="5" tipus="gyak">
+        <targy tnev="WEB technológiák 1."></targy>
+        <idopont>
+            <nap nnev="Hétfő"></nap>
+            <tol tolnev="16:00"></tol>
+            <ig ignev="18:00"></ig>
+        </idopont>
+        <helyszin hnev="Inf/202"></helyszin>
+        <oktato oknev="Agárdi Anita"></oktato>
+        <szak sznev="Mérnökinformatikus"></szak>
+    </ora>
+
+    <!--Kedd-->
+
+    <ora id="6" tipus="gyak">
+        <targy tnev="Elektrotechnika-elektronika"></targy>
+        <idopont>
+            <nap nnev="Kedd"></nap>
+            <tol tolnev="8:00"></tol>
+            <ig ignev="10:00"></ig>
+        </idopont>
+        <helyszin hnev="A1/316."></helyszin>
+        <oktato oknev="Szabó Norbert"></oktato>
+        <szak sznev="Mérnökinformatikus"></szak>
+    </ora>
+
+    <ora id="7" tipus="ea">
+        <targy tnev="Adatkezelés XML-ben"></targy>
+        <idopont>
+            <nap nnev="Kedd"></nap>
+            <tol tolnev="12:00"></tol>
+            <ig ignev="14:00"></ig>
+        </idopont>
+        <helyszin hnev="XXXII."></helyszin>
+        <oktato oknev="Dr. Bednarik László"></oktato>
+        <szak sznev="Mérnökinformatikus"></szak>
+    </ora>
+
+    <ora id="8" tipus="ea">
+        <targy tnev="WEB-es alkalmazások (C#)"></targy>
+        <idopont>
+            <nap nnev="Kedd"></nap>
+            <tol tolnev="14:00"></tol>
+            <ig ignev="16:00"></ig>
+        </idopont>
+        <helyszin hnev="Inf/101"></helyszin>
+        <oktato oknev="Árvai László Lajos"></oktato>
+        <szak sznev="Mérnökinformatikus"></szak>
+    </ora>
+
+    <ora id="9" tipus="gyak">
+        <targy tnev="WEB-es alkalmazások (C#)"></targy>
+        <idopont>
+            <nap nnev="Kedd"></nap>
+            <tol tolnev="16:00"></tol>
+            <ig ignev="18:00"></ig>
+        </idopont>
+        <helyszin hnev="Inf/101"></helyszin>
+        <oktato oknev="Dr. Pszota Gábor"></oktato>
+        <szak sznev="Mérnökinformatikus"></szak>
+    </ora>
+
+    <!--Szerda-->
+
+    <ora id="10" tipus="gyak">
+        <targy tnev="Adatkezelés XML-ben"></targy>
+        <idopont>
+            <nap nnev="Szerda"></nap>
+            <tol tolnev="10:00"></tol>
+            <ig ignev="12:00"></ig>
+        </idopont>
+        <helyszin hnev="Inf/101"></helyszin>
+        <oktato oknev="Dr. Bednarik László"></oktato>
+        <szak sznev="Mérnökinformatikus"></szak>
+    </ora>
+
+    <ora id="11" tipus="ea">
+        <targy tnev="Integrált vállalati rendszerek"></targy>
+        <idopont>
+            <nap nnev="Szerda"></nap>
+            <tol tolnev="12:00"></tol>
+            <ig ignev="14:00"></ig>
+        </idopont>
+        <helyszin hnev="X. A1/218."></helyszin>
+        <oktato oknev="Dr. Samad Dadvandipour"></oktato>
+        <szak sznev="Mérnökinformatikus"></szak>
+    </ora>
+
+    <ora id="12" tipus="gyak">
+        <targy tnev="Integrált vállalati rendszerek"></targy>
+        <idopont>
+            <nap nnev="Szerda"></nap>
+            <tol tolnev="14:00"></tol>
+            <ig ignev="16:00"></ig>
+        </idopont>
+        <helyszin hnev="Inf/15"></helyszin>
+        <oktato oknev="Dr. Kulcsárné Dr. Forrai Mónika"></oktato>
+        <szak sznev="Mérnökinformatikus"></szak>
+    </ora>
+
+    <ora id="13" tipus="ea">
+        <targy tnev="Windows Rendszergazda"></targy>
+        <idopont>
+            <nap nnev="Szerda"></nap>
+            <tol tolnev="16:00"></tol>
+            <ig ignev="18:00"></ig>
+        </idopont>
+        <helyszin hnev="Inf/101"></helyszin>
+        <oktato oknev="Wagner György"></oktato>
+        <szak sznev="Mérnökinformatikus"></szak>
+    </ora>
+
+    <ora id="14" tipus="gyak">
+        <targy tnev="Windows Rendszergazda"></targy>
+        <idopont>
+            <nap nnev="Szerda"></nap>
+            <tol tolnev="18:00"></tol>
+            <ig ignev="20:00"></ig>
+        </idopont>
+        <helyszin hnev="Inf/101"></helyszin>
+        <oktato oknev="Wagner György"></oktato>
+        <szak sznev="Mérnökinformatikus"></szak>
+    </ora>
+</DLWGQZ_orarend>
