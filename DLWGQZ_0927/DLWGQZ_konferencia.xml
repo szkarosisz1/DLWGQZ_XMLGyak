@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DLWGQZ_konferencia>
+    <konferencia>
+        <cim>Adatkezelés XML-ben</cim>
+        <hallgatók>
+            <hallgató>
+                <név>Szkárosi Szilárd</név>
+                <lakcím>Miskolc</lakcím>
+            </hallgató>    
+        </hallgatók>
+        <helyszín>Miskolc</helyszín> 
+        <előadó>
+            <név>Dr. Bednarik László</név>
+            <adószám>9876543210</adószám>
+            <lakcím>Miskolc</lakcím>    
+        </előadó> 
+        <dátum>2029.09.26.</dátum>
+    </konferencia>
+
+    <konferencia>
+        <cim>Adatkezelés XML-ben</cim>
+        <hallgatók>
+            <hallgató>
+                <név>Nyíri Levente</név>
+                <lakcím>Miskolc</lakcím>
+            </hallgató>    
+        </hallgatók>
+        <helyszín>Miskolc</helyszín> 
+        <előadó>
+            <név>Dr. Bednarik László</név>
+            <adószám>9876543210</adószám>
+            <lakcím>Miskolc</lakcím>    
+        </előadó> 
+        <dátum>2029.09.26.</dátum>
+    </konferencia>
+</DLWGQZ_konferencia>
