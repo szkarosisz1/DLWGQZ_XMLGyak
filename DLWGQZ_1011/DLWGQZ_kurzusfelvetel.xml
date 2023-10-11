@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<kurzusfelvetel tanev="2023/2024_1" egyeten="ME"
+xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+xsi:noNamespaceSchemaLocation="DLWGQZ_kurzusfelvetel1.xsd"/>
+
+<DLWGQZ_kurzusfelvetel>
+    <kurzusfelvetel>
+        <hallgato>
+            <hnev>Szkárosi Szilárd</hnev>
+            <szulev>2001-10-20</szulev>
+            <szak evf="5">Mérnökinformatikus</szak>
+        </hallgato>
+        <kurzusok>
+            <kurzus id="GEIAL332-B" jovahagyas="igen">
+                <kurzusnev>Adatkezelés XML-ben</kurzusnev>
+                <kredit>5</kredit>
+                <hely>XXXII.</hely>
+                <idopont>Kedd 12:00-14:00</idopont>
+                <oktato>Dr. Bednarik László</oktato>
+            </kurzus>
+            <kurzus id="MIGEBANNY1" nyelv="angol">
+                <kurzusnev>Angol nyelv nyelvvizsga előkészítő szint 1.</kurzusnev>
+                <kredit>0</kredit>
+                <hely>A5/202.</hely>
+                <idopont>Hétfő 12:00-14:00</idopont>
+                <oktato>Pásztor Krisztina Mária</oktato>
+                <oraado>Pásztor Krisztina Mária</oraado>
+            </kurzus>
+            <kurzus id="GEIAL331-B" jovahagyas="igen">
+                <kurzusnev>Web technológiák 1</kurzusnev>
+                <kredit>5</kredit>
+                <hely>A5/305.</hely>
+                <idopont>Hétfő 14:00-16:00</idopont>
+                <oktato>Agárdi Anita</oktato>
+                <oraado>Pásztor Krisztina Mária</oraado>
+            </kurzus>
+            <kurzus id="GEFIT012-B">
+                <kurzusnev>Fizika II.</kurzusnev>
+                <kredit>4</kredit>
+                <hely>A1/12.</hely>
+                <idopont>Hétfő 10:00-12:00</idopont>
+                <oktato>Dr. Pszota Gábor</oktato>
+                <oraado>Nagy Ádám</oraado>
+            </kurzus>                                 
+        </kurzusok>
+    </kurzusfelvetel>
+</DLWGQZ_kurzusfelvetel>
