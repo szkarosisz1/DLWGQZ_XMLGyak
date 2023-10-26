@@ -22,7 +22,7 @@ public class XsdDLWGQZ {
 			SAXParserFactory saxFactory = SAXParserFactory.newInstance();
 			saxFactory.setSchema(schema);
 			SAXParser parser = saxFactory.newSAXParser();
-			parser.parse("YD11NL_kurzusfelvetel.xml", new ValidationHandler());
+			parser.parse("DLWGQZ_kurzusfelvetel.xml", new ValidationHandler());
 			System.out.println("XSD Validation successful");
 
 		}catch(SAXParseException parseExc) {
