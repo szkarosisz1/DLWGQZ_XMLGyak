@@ -18,7 +18,7 @@ public class XsdDLWGQZ {
     public static void main(String[] args) {
 		try {			
 			SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
-			Schema schema = schemaFactory.newSchema(new File("YD11NL_kurzusfelvetel.xsd"));
+			Schema schema = schemaFactory.newSchema(new File("DLWGQZ_kurzusfelvetel.xsd"));
 			SAXParserFactory saxFactory = SAXParserFactory.newInstance();
 			saxFactory.setSchema(schema);
 			SAXParser parser = saxFactory.newSAXParser();
