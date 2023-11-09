@@ -20,7 +20,7 @@ public class DomWriteDLWGQZ {
         } catch (Exception e) { 
             e.printStackTrace();
         }
-	}
+    }
 
     private static Document parseXmlFile(String filePath) throws Exception {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
