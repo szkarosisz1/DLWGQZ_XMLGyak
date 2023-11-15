@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+<!--Egyszerű típusok kigyűjtése-->
+    <!--Csapat-->
+    <xs:element name="Vezetőedző" type="xs:string" />
+    <xs:element name="Név" type="xs:string" />
+    <!--Logó-->
+    <xs:element name="Színek" type="xs:string" />
+    <xs:element name="Tervező" type="xs:string" />
+    <!--Csoport-->
+    <xs:element name="Jelölés" type="jelolesTipus" />
+    <!--Labdarúgó-->
+    <xs:element name="Poszt" type="xs:string" />
+    <xs:element name="Keresztnév" type="xs:string" />
+    <xs:element name="Vezetéknév" type="xs:string" />
+    <xs:element name="Gól" type="golTipus" />
+    <xs:element name="Mezszám" type="xs:int" />
+    <xs:element name="Szülidő" type="datumTipus" />
+    <!--Mérkőzés-->
+    <xs:element name="Csapat1Gólok" type="golTipus" />
+    <xs:element name="Csapat2Gólok" type="golTipus" />
+    <!--Helyszín-->
+    <xs:element name="Férőhely" type="ferohelyTipus" />
+    <xs:element name="Tulajdonos" type="xs:string" />    
+    <xs:element name="Város" type="xs:string"/>  
+    <!--Mérkőzik-->
+    <xs:element name="Dátum" type="datumTipus" />
+    <xs:element name="Játékvezető" type="xs:string"/> 
+    <!--Saját típusok meghatározása-->
+    <xs:simpleType name="jelolesTipus">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="A" />
+            <xs:enumeration value="B" />
+            <xs:enumeration value="C" />
+            <xs:enumeration value="D" />
+            <xs:enumeration value="E" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="ferohelyTipus">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="30000" />
+            <xs:maxInclusive value="100000" />
+        </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="golTipus">
+        <xs:restriction base="xs:int">
+            <xs:minInclusive value="0" />
+            <xs:maxInclusive value="10" />
+    </xs:restriction>
+    </xs:simpleType>
+    <xs:simpleType name="datumTipus">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="([12]\d{3}.(0[1-9]|1[0-2]).(0[1-9]|[12]\d|3[01]))" />
+        </xs:restriction>
+    </xs:simpleType>    
+    <!--Komplex típusokhoz saját típus meghatározása-->
+    <xs:complexType name="csapatTípus">
+        <xs:sequence>        
+            <xs:element ref="Vezetőedző" />
+            <xs:element ref="Név" />
+        </xs:sequence>
+            <xs:attribute name="CSkód" type="xs:integer" use="required" />
+            <xs:attribute name="Csapatkapitány" type="xs:string" />
+            <xs:attribute name="CSOPkód" type="xs:integer" />
+            <xs:attribute name="LOGÓkód" type="xs:integer" />
+    </xs:complexType>    
+    <xs:complexType name="logóTípus">
+        <xs:sequence>          
+            <xs:element ref="Színek" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element ref="Tervező" />
+        </xs:sequence>
+            <xs:attribute name="LOGÓkód" type="xs:integer" use="required" />
+    </xs:complexType>         
+    <xs:complexType name="csoportTípus">        
+        <xs:sequence>
+            <xs:element ref="Jelölés" />
+        </xs:sequence>
+                <xs:attribute name="CSOPkód" type="xs:integer" use="required" />
+    </xs:complexType>   
+    <xs:complexType name="labdarúgóTípus">
+        <xs:sequence>
+            <xs:element ref="Poszt" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element name="Név">
+                <xs:complexType>
+                    <xs:sequence>
+                         <xs:element ref="Keresztnév" />
+                        <xs:element ref="Vezetéknév" />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element ref="Gól" />
+            <xs:element ref="Mezszám" />
+            <xs:element ref="Szülidő" />
+        </xs:sequence>
+            <xs:attribute name="Lkód" type="xs:ID" use="required" />
+            <xs:attribute name="CSkód" type="xs:integer" />
+    </xs:complexType>  
+    <xs:complexType name="mérkőzésTípus">        
+        <xs:sequence>
+            <xs:element ref="Csapat1Gólok" />
+            <xs:element ref="Csapat2Gólok" />
+         </xs:sequence>
+            <xs:attribute name="Mkód" type="xs:integer" use="required" />
+            <xs:attribute name="Tkód" type="xs:integer" />
+            <xs:attribute name="Hkód" type="xs:integer" />
+     </xs:complexType>
+    <xs:complexType name="helyszínTípus">
+        <xs:sequence>
+            <xs:element name="Stadion">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element ref="Név" />
+                        <xs:element ref="Férőhely" />
+                        <xs:element ref="Tulajdonos"  />
+                    </xs:sequence>
+                </xs:complexType>
+            </xs:element>
+            <xs:element name="Város" />
+        </xs:sequence>
+            <xs:attribute name="Hkód" type="xs:integer" use="required" />
+    </xs:complexType>       
+    <xs:complexType name="típus">
+            <xs:sequence>
+                <xs:element ref="Név" />
+            </xs:sequence>
+            <xs:attribute name="Tkód" type="xs:integer" use="required" />
+    </xs:complexType>
+     <xs:complexType name="mérkőzikTípus">
+        <xs:sequence>
+            <xs:element ref="Dátum" />
+            <xs:element ref="Játékvezető" />
+        </xs:sequence>
+            <xs:attribute name="Mkód" type="xs:integer" use="required" />
+            <xs:attribute name="Csapat1" type="xs:integer" />
+            <xs:attribute name="Csapat2" type="xs:integer" />
+            <xs:attribute name="Győztes" type="xs:integer" />
+    </xs:complexType>   
+   <!--Gyökérelemtől az elemek felhasználása-->
+    <xs:element name="Világbajnokság_DLWGQZ">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="Csapat" type="csapatTípus" minOccurs="1" maxOccurs="100"/>
+                <xs:element name="Logó" type="logóTípus" minOccurs="1" maxOccurs="100"/>
+                <xs:element name="Csoport" type="csoportTípus" minOccurs="1" maxOccurs="10"/>
+                <xs:element name="Labdarúgó" type="labdarúgóTípus" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="Mérkőzés" type="mérkőzésTípus" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="Helyszín" type="helyszínTípus" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="Típus" type="típus" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="Mérkőzik" type="mérkőzikTípus" minOccurs="1" maxOccurs="unbounded"/>
+            </xs:sequence>
+        </xs:complexType>   
+        <!--Elsődleges kulcsok-->
+        <xs:key name="csapat_kulcs">
+            <xs:selector xpath="Csapat"/>
+            <xs:field xpath="@CSkód"/>
+        </xs:key>
+        <xs:key name="logó_kulcs">
+            <xs:selector xpath="Logó"/>
+            <xs:field xpath="@LOGÓkód"/>
+        </xs:key>
+        <xs:key name="csoport_kulcs">
+            <xs:selector xpath="Csoport"/>
+            <xs:field xpath="@CSOPkód"/>
+        </xs:key>
+        <xs:key name="labdarúgó_kulcs">
+            <xs:selector xpath="Labdarúgó"/>
+            <xs:field xpath="@Lkód"/>
+        </xs:key>
+        <xs:key name="mérkőzés_kulcs">
+            <xs:selector xpath="Mérkőzés"/>
+            <xs:field xpath="@Mkód"/>
+        </xs:key>
+        <xs:key name="helyszín_kulcs">
+            <xs:selector xpath="Helyszín"/>
+            <xs:field xpath="@Hkód"/>
+        </xs:key>
+        <xs:key name="típus_kulcs">
+            <xs:selector xpath="Típus"/>
+            <xs:field xpath="@Tkód"/>
+        </xs:key>
+        <!--Idegen kulcsok-->
+        <xs:keyref name="csapat_labdarúgó_kulcs" refer="csapat_kulcs">
+            <xs:selector xpath="Labdarúgó"/>
+            <xs:field xpath="@CSkód"/>
+        </xs:keyref>
+        <xs:keyref name="csapat_mérkőzik_kulcs_csapat1" refer="csapat_kulcs">
+            <xs:selector xpath="Mérkőzik"/>
+            <xs:field xpath="@Csapat1"/>
+        </xs:keyref>
+        <xs:keyref name="csapat_mérkőzik_kulcs_csapat2" refer="csapat_kulcs">
+            <xs:selector xpath="Mérkőzik"/>
+            <xs:field xpath="@Csapat2"/>
+        </xs:keyref>
+        <xs:keyref name="csapat_mérkőzik_kulcs_győztes" refer="csapat_kulcs">
+            <xs:selector xpath="Mérkőzik"/>
+            <xs:field xpath="@Győztes"/>
+        </xs:keyref>
+        <xs:keyref name="logó_csapat_kulcs" refer="logó_kulcs">
+            <xs:selector xpath="Csapat"/>
+            <xs:field xpath="@LOGÓkód"/>
+        </xs:keyref>
+        <xs:keyref name="csoport_csapat_kulcs" refer="csoport_kulcs">
+            <xs:selector xpath="Csapat"/>
+            <xs:field xpath="@CSOPkód"/>
+        </xs:keyref>
+        <xs:keyref name="labdarúgó_csapat_kulcs" refer="labdarúgó_kulcs">
+            <xs:selector xpath="Csapat"/>
+            <xs:field xpath="@Csapatkapitány"/>
+        </xs:keyref>
+        <xs:keyref name="mérkőzés_mérkőzik_kulcs" refer="mérkőzés_kulcs">
+            <xs:selector xpath="Mérkőzik"/>
+            <xs:field xpath="@Mkód"/>
+        </xs:keyref>
+        <xs:keyref name="helyszín_mérkőzés_kulcs" refer="helyszín_kulcs">
+            <xs:selector xpath="Mérkőzés"/>
+            <xs:field xpath="@Hkód"/>
+        </xs:keyref>
+        <xs:keyref name="típus_mérkőzés_kulcs" refer="típus_kulcs">
+            <xs:selector xpath="Mérkőzés"/>
+            <xs:field xpath="@Tkód"/>
+        </xs:keyref>
+        <!--Az 1:1 kapcsolat megvalósítás-->
+        <xs:unique name="logó_csapat_egyegy">
+            <xs:selector xpath="Csapat"/>
+            <xs:field xpath="@LOGÓkód"/>
+        </xs:unique>   
+    </xs:element>
+</xs:schema>
