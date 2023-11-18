@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<DLWGQZ_kurzusfelvetel tanev="2023/2024" egyetem="ME">
+
+    <hallgato id="DLWGQZ.ME">
+        <nev>Szkárosi Szilárd</nev>
+        <szulev>2001.10.20.</szulev>
+        <szak evf="5">Mérnökinformatikus Bsc</szak>
+    </hallgato>
+
+    <kurzusok>
+        <kurzus id="GEIAL332-B">
+            <kurzusnev>Adatkezelés XML környezetben</kurzusnev>
+            <kredit>5</kredit>
+            <hely>XXXII.</hely>
+            <idopont>Kedd 12:00-13:30</idopont>
+            <oktato>Dr. Bednarik László</oktato>
+        </kurzus>
+
+        <kurzus id="GEFIT012-B" jovahagyas="igen">
+            <kurzusnev>Fizika II.</kurzusnev>
+            <kredit>4</kredit>
+            <hely>A1/12.</hely>
+            <idopont>Hétfő 10:00-12:00</idopont>
+            <oktato>Dr. Pszota Gábor</oktato>
+            <oraado>Nagy Ádám</oraado>
+        </kurzus>
+    </kurzusok>
+
+</DLWGQZ_kurzusfelvetel>
