@@ -25,7 +25,7 @@
     <xs:element name="Város" type="xs:string"/>  
     <!--Mérkőzik-->
     <xs:element name="Dátum" type="datumTipus" />
-    <xs:element name="Játékvezető" type="xs:string"/> 
+    <xs:element name="Játékvezető" type="xs:string" /> 
     <!--Saját típusok meghatározása-->
     <xs:simpleType name="jelolesTipus">
         <xs:restriction base="xs:string">
@@ -45,7 +45,7 @@
     <xs:simpleType name="golTipus">
         <xs:restriction base="xs:int">
             <xs:minInclusive value="0" />
-            <xs:maxInclusive value="10" />
+            <xs:maxInclusive value="15" />
     </xs:restriction>
     </xs:simpleType>
     <xs:simpleType name="datumTipus">
@@ -66,7 +66,7 @@
     </xs:complexType>    
     <xs:complexType name="logóTípus">
         <xs:sequence>          
-            <xs:element ref="Színek" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element ref="Színek" minOccurs="1" maxOccurs="10"/>
             <xs:element ref="Tervező" />
         </xs:sequence>
             <xs:attribute name="LOGÓkód" type="xs:integer" use="required" />
@@ -83,7 +83,7 @@
             <xs:element name="Név">
                 <xs:complexType>
                     <xs:sequence>
-                         <xs:element ref="Keresztnév" />
+                        <xs:element ref="Keresztnév" />
                         <xs:element ref="Vezetéknév" />
                     </xs:sequence>
                 </xs:complexType>
@@ -92,7 +92,7 @@
             <xs:element ref="Mezszám" />
             <xs:element ref="Szülidő" />
         </xs:sequence>
-            <xs:attribute name="Lkód" type="xs:ID" use="required" />
+            <xs:attribute name="Lkód" type="xs:string" />
             <xs:attribute name="CSkód" type="xs:integer" />
     </xs:complexType>  
     <xs:complexType name="mérkőzésTípus">        
@@ -100,7 +100,7 @@
             <xs:element ref="Csapat1Gólok" />
             <xs:element ref="Csapat2Gólok" />
          </xs:sequence>
-            <xs:attribute name="Mkód" type="xs:integer" use="required" />
+            <xs:attribute name="Mkód" type="xs:integer" />
             <xs:attribute name="Tkód" type="xs:integer" />
             <xs:attribute name="Hkód" type="xs:integer" />
      </xs:complexType>
@@ -142,11 +142,11 @@
                 <xs:element name="Csapat" type="csapatTípus" minOccurs="1" maxOccurs="100"/>
                 <xs:element name="Logó" type="logóTípus" minOccurs="1" maxOccurs="100"/>
                 <xs:element name="Csoport" type="csoportTípus" minOccurs="1" maxOccurs="10"/>
-                <xs:element name="Labdarúgó" type="labdarúgóTípus" minOccurs="1" maxOccurs="unbounded"/>
-                <xs:element name="Mérkőzés" type="mérkőzésTípus" minOccurs="1" maxOccurs="unbounded"/>
-                <xs:element name="Helyszín" type="helyszínTípus" minOccurs="1" maxOccurs="unbounded"/>
-                <xs:element name="Típus" type="típus" minOccurs="1" maxOccurs="unbounded"/>
-                <xs:element name="Mérkőzik" type="mérkőzikTípus" minOccurs="1" maxOccurs="unbounded"/>
+                <xs:element name="Labdarúgó" type="labdarúgóTípus" minOccurs="1" maxOccurs="100"/>
+                <xs:element name="Mérkőzés" type="mérkőzésTípus" minOccurs="1" maxOccurs="100"/>
+                <xs:element name="Helyszín" type="helyszínTípus" minOccurs="1" maxOccurs="100"/>
+                <xs:element name="Típus" type="típus" minOccurs="1" maxOccurs="100"/>
+                <xs:element name="Mérkőzik" type="mérkőzikTípus" minOccurs="1" maxOccurs="100"/>
             </xs:sequence>
         </xs:complexType>   
         <!--Elsődleges kulcsok-->
