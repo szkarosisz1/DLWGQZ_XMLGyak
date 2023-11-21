@@ -15,10 +15,10 @@ import javax.xml.transform.stream.StreamResult;
 public class DOMModifyDLWGQZ {
     public static void main(String[] args) {
     	// Metódus meghívása
-        modifyElementXMLDLWGQZDocument("XMLDLWGQZ.xml");
+        modifyElements("XMLDLWGQZ.xml");
     }
 
-    private static void modifyElementXMLDLWGQZDocument(String filePath) {
+    private static void modifyElements(String filePath) {
         try {
         	// Fájl beolvasása
             File xmlFile = new File(filePath);

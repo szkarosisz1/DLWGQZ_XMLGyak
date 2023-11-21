@@ -19,10 +19,10 @@ public class DOMWriteDLWGQZ {
 
 	public static void main(String[] args) {
 		// Metódus meghívása
-		writeElementsOfXMLDLWGQZdocumentToFileAndConsole();
+		writeElementsOfXMLDocumentToFileAndConsole();
 	}
 	
-	private static void writeElementsOfXMLDLWGQZdocumentToFileAndConsole() {
+	private static void writeElementsOfXMLDocumentToFileAndConsole() {
 		try {
 			// Előkészítjük a dokumentumot
             DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();

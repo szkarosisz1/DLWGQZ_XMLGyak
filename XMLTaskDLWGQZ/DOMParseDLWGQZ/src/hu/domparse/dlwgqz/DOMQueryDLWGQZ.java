@@ -12,19 +12,56 @@ import javax.xml.xpath.XPathConstants;
 import javax.xml.xpath.XPathExpression;
 import javax.xml.xpath.XPathFactory;
 
+import javax.xml.XMLConstants;
+import javax.xml.transform.Source;
+import javax.xml.transform.stream.StreamSource;
+import javax.xml.validation.Schema;
+import javax.xml.validation.SchemaFactory;
+import javax.xml.validation.Validator;
+
 public class DOMQueryDLWGQZ {
 
 	public static void main(String[] args) {
-		//Metódusok meghívása
-		taskOneQueryXMLDLWGQZDocument("./XMLDLWGQZ.xml");
-		taskTwoQueryXMLDLWGQZDocument("./XMLDLWGQZ.xml");
-		taskThreeQueryXMLDLWGQZDocument("./XMLDLWGQZ.xml");
-		taskFourQueryXMLDLWGQZDocument("./XMLDLWGQZ.xml");
-		taskFiveQueryXMLDLWGQZDocument("./XMLDLWGQZ.xml");
+		// Metódusok meghívása
+		printTeamAndPlayerCount("./XMLDLWGQZ.xml");
+		printPlayerNamesAndGoals("./XMLDLWGQZ.xml");
+		printAllStadiumNames("./XMLDLWGQZ.xml");
+		printOldestPlayerInfo("./XMLDLWGQZ.xml");
+		printAllLogoData("./XMLDLWGQZ.xml");
 		
+		// Megvizsgálja, hogy az XML és az xsd dokumentumok validak-e
+		if (validateXMLAndXsdDocument("./XMLDLWGQZ.xml", "./XMLSchemaDLWGQZ.xsd")) {
+            System.out.println("\nAz XMLDLWGQZ.xml fájl megfelel az XMLSchemaDLWGQZ.xsd fájlnak.");
+        } else {
+            System.out.println("\nAz XMLDLWGQZ.xml fájl nem megfelel az XMLSchemaDLWGQZ.xsd fájlnak.");
+        }	
 	}
+
+	public static boolean validateXMLAndXsdDocument(String xmlFilePath, String xsdFilePath) {
+        try {
+            // XML fájl beolvasása a DOM segítségével
+            DocumentBuilderFactory documentBuilderFactory = DocumentBuilderFactory.newInstance();
+            documentBuilderFactory.setNamespaceAware(true);
+            DocumentBuilder documentBuilder = documentBuilderFactory.newDocumentBuilder();
+            Document document = documentBuilder.parse(xmlFilePath);
+
+            // XSD fájl ellenőrzése
+            SchemaFactory schemaFactory = SchemaFactory.newInstance(XMLConstants.W3C_XML_SCHEMA_NS_URI);
+            Source xsdFile = new StreamSource(xsdFilePath);
+            Schema schema = schemaFactory.newSchema(xsdFile);
+            Validator validator = schema.newValidator();
+            validator.validate(new javax.xml.transform.dom.DOMSource(document));
+
+            // Ha a validáció sikeres, akkor az XML és az XSD fájlok egyeznek
+            return true; 
+        } catch (Exception e) {
+            e.printStackTrace();
+            // Ha bármilyen hiba történik, akkor az XML és az XSD fájlok nem egyeznek
+            return false;
+        }
+    }
 	
-	private static void taskFiveQueryXMLDLWGQZDocument(String filePath) {
+	private static void printAllLogoData(String filePath) {
 		try {
 			//Új sor a konzolra
 			System.out.println();
@@ -64,7 +101,6 @@ public class DOMQueryDLWGQZ {
 
 	                String tervezo = logoElement.getElementsByTagName("Tervező").item(0).getTextContent();
 	                System.out.println("Tervező: " + tervezo);
-
 	                System.out.println("========================");
 	               }
 	         }		     
@@ -73,7 +109,7 @@ public class DOMQueryDLWGQZ {
         }
 	}
 	
-	private static void taskFourQueryXMLDLWGQZDocument(String filePath) {
+	private static void printOldestPlayerInfo(String filePath) {
 		try {
 			//Új sor a konzolra
 			System.out.println();
@@ -116,7 +152,7 @@ public class DOMQueryDLWGQZ {
         }
 	}
 	
-	private static void taskThreeQueryXMLDLWGQZDocument(String filePath) {
+	private static void printAllStadiumNames(String filePath) {
 		try {
 			//Új sor a konzolra
 			System.out.println();
@@ -149,7 +185,7 @@ public class DOMQueryDLWGQZ {
 	    }	
 	}
 	
-	private static void taskTwoQueryXMLDLWGQZDocument(String filePath) {
+	private static void printPlayerNamesAndGoals(String filePath) {
 		try {
 			//Új sor a konzolra
 			System.out.println();
@@ -187,7 +223,7 @@ public class DOMQueryDLWGQZ {
 	    }
 	 }
 			
-	private static void taskOneQueryXMLDLWGQZDocument(String filePath){	
+	private static void printTeamAndPlayerCount(String filePath){	
 		try {
 			// Fájl beolvasása
 			File xmlFile = new File(filePath);
