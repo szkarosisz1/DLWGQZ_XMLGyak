@@ -79,7 +79,7 @@
     </xs:complexType>   
     <xs:complexType name="labdarúgóTípus">
         <xs:sequence>
-            <xs:element ref="Poszt" minOccurs="1" maxOccurs="unbounded"/>
+            <xs:element ref="Poszt" minOccurs="1" maxOccurs="20"/>
             <xs:element name="Név">
                 <xs:complexType>
                     <xs:sequence>
