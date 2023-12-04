@@ -1,268 +1,321 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Vil√°gbajnoks√°g_DLWGQZ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaDLWGQZ.xsd">
- <Csapat CSOPk√≥d="11" CSk√≥d="1" Csapatkapit√°ny="CR7" LOG√ìk√≥d="21">
-    <Vezet≈ëedz≈ë>Roberto Mart√≠nez</Vezet≈ëedz≈ë>
-    <N√©v>Portug√°lia</N√©v>
+<Vil·gbajnoks·g_DLWGQZ xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="XMLSchemaDLWGQZ.xsd">
+ <Csapat CSOPkÛd="11" CSkÛd="1" Csapatkapit·ny="CR7" LOG”kÛd="21">
+  <Vezetıedzı >Roberto MartÌnez</Vezetıedzı>
+  <NÈv >Portug·lia</NÈv>
  </Csapat>
- <Csapat CSOPk√≥d="12" CSk√≥d="2" Csapatkapit√°ny="TS1" LOG√ìk√≥d="22">
-    <Vezet≈ëedz≈ë>Hansi Flick</Vezet≈ëedz≈ë>
-    <N√©v>N√©metorsz√°g</N√©v>
+
+ <Csapat CSOPkÛd="12" CSkÛd="2" Csapatkapit·ny="TS1" LOG”kÛd="22">
+  <Vezetıedzı >Hansi Flick</Vezetıedzı>
+  <NÈv >NÈmetorsz·g</NÈv>
  </Csapat>
- <Csapat CSOPk√≥d="13" CSk√≥d="3" Csapatkapit√°ny="KM10" LOG√ìk√≥d="23">
-    <Vezet≈ëedz≈ë>Didier Deschamp</Vezet≈ëedz≈ë>
-    <N√©v>Franciaorsz√°g</N√©v>
+
+ <Csapat CSOPkÛd="13" CSkÛd="3" Csapatkapit·ny="KM10" LOG”kÛd="23">
+  <Vezetıedzı >Didier Deschamp</Vezetıedzı>
+  <NÈv >Franciaorsz·g</NÈv>
  </Csapat>
- <Csapat CSOPk√≥d="14" CSk√≥d="4" Csapatkapit√°ny="HK9" LOG√ìk√≥d="24">
-    <Vezet≈ëedz≈ë>Gareth Southgate</Vezet≈ëedz≈ë>
-    <N√©v>Anglia</N√©v>
+
+ <Csapat CSOPkÛd="14" CSkÛd="4" Csapatkapit·ny="HK9" LOG”kÛd="24">
+  <Vezetıedzı >Gareth Southgate</Vezetıedzı>
+  <NÈv >Anglia</NÈv>
  </Csapat>
- <Csapat CSOPk√≥d="15" CSk√≥d="5" Csapatkapit√°ny="LM10" LOG√ìk√≥d="25">
-    <Vezet≈ëedz≈ë>Lionel Scaloni</Vezet≈ëedz≈ë>
-    <N√©v>Argent√≠na</N√©v>
+
+ <Csapat CSOPkÛd="15" CSkÛd="5" Csapatkapit·ny="LM10" LOG”kÛd="25">
+  <Vezetıedzı >Lionel Scaloni</Vezetıedzı>
+  <NÈv >ArgentÌna</NÈv>
  </Csapat>
- <Log√≥ LOG√ìK√≥d="21">
-    <Sz√≠nek>Piros</Sz√≠nek>
-    <Sz√≠nek>K√©k</Sz√≠nek>
-    <Sz√≠nek>Z√∂ld</Sz√≠nek>
-    <Tervez≈ë>Ant√≥nio Modesto</Tervez≈ë>
- </Log√≥>
- <Log√≥ LOG√ìK√≥d="22">
-    <Sz√≠nek>Fekete</Sz√≠nek>
-    <Sz√≠nek>Piros</Sz√≠nek>
-    <Sz√≠nek>Arany</Sz√≠nek>
-    <Tervez≈ë>Anton Stankowski</Tervez≈ë>
- </Log√≥>
- <Log√≥ LOG√ìK√≥d="23">
-    <Sz√≠nek>K√©k</Sz√≠nek>
-    <Sz√≠nek>Feh√©r</Sz√≠nek>
-    <Sz√≠nek>Piros</Sz√≠nek>
-    <Tervez≈ë>Raymond Savignac</Tervez≈ë>
- </Log√≥>
- <Log√≥ LOG√ìK√≥d="24">
-    <Sz√≠nek>Feh√©r</Sz√≠nek>
-    <Sz√≠nek>K√©k</Sz√≠nek>
-    <Sz√≠nek>Piros</Sz√≠nek>
-    <Tervez≈ë>William C. Gibbons</Tervez≈ë>
- </Log√≥>
- <Log√≥ LOG√ìK√≥d="25">
-    <Sz√≠nek>√âgk√©k</Sz√≠nek>
-    <Sz√≠nek>Feh√©r</Sz√≠nek>
-    <Sz√≠nek>S√°rga</Sz√≠nek>
-    <Tervez≈ë>Salvador Dellutri</Tervez≈ë>
- </Log√≥>
- <Csoport CSOPk√≥d="11">
-    <Jel√∂l√©s>A</Jel√∂l√©s>
+
+
+ <LogÛ LOG”KÛd="21">
+  <SzÌnek >Piros</SzÌnek>
+  <SzÌnek >KÈk</SzÌnek>
+  <SzÌnek >Zˆld</SzÌnek>
+  <Tervezı >AntÛnio Modesto</Tervezı>
+ </LogÛ>
+
+ <LogÛ LOG”KÛd="22">
+  <SzÌnek >Fekete</SzÌnek>
+  <SzÌnek >Piros</SzÌnek>
+  <SzÌnek >Arany</SzÌnek>
+  <Tervezı >Anton Stankowski</Tervezı>
+ </LogÛ>
+
+ <LogÛ LOG”KÛd="23">
+  <SzÌnek >KÈk</SzÌnek>
+  <SzÌnek >FehÈr</SzÌnek>
+  <SzÌnek >Piros</SzÌnek>
+  <Tervezı >Raymond Savignac</Tervezı>
+ </LogÛ>
+
+ <LogÛ LOG”KÛd="24">
+  <SzÌnek >FehÈr</SzÌnek>
+  <SzÌnek >KÈk</SzÌnek>
+  <SzÌnek >Piros</SzÌnek>
+  <Tervezı >William C. Gibbons</Tervezı>
+ </LogÛ>
+
+ <LogÛ LOG”KÛd="25">
+  <SzÌnek >…gkÈk</SzÌnek>
+  <SzÌnek >FehÈr</SzÌnek>
+  <SzÌnek >S·rga</SzÌnek>
+  <Tervezı >Salvador Dellutri</Tervezı>
+ </LogÛ>
+
+
+ <Csoport CSOPkÛd="11">
+  <JelˆlÈs >A</JelˆlÈs>
  </Csoport>
- <Csoport CSOPk√≥d="12">
-    <Jel√∂l√©s>B</Jel√∂l√©s>
+
+ <Csoport CSOPkÛd="12">
+  <JelˆlÈs >B</JelˆlÈs>
  </Csoport>
- <Csoport CSOPk√≥d="13">
-    <Jel√∂l√©s>C</Jel√∂l√©s>
+
+ <Csoport CSOPkÛd="13">
+  <JelˆlÈs >C</JelˆlÈs>
  </Csoport>
- <Csoport CSOPk√≥d="14">
-    <Jel√∂l√©s>D</Jel√∂l√©s>
+
+ <Csoport CSOPkÛd="14">
+  <JelˆlÈs >D</JelˆlÈs>
  </Csoport>
- <Csoport CSOPk√≥d="15">
-    <Jel√∂l√©s>E</Jel√∂l√©s>
+
+ <Csoport CSOPkÛd="15">
+  <JelˆlÈs >E</JelˆlÈs>
  </Csoport>
- <Labdar√∫g√≥ CSk√≥d="1" Lk√≥d="CR7">
-    <Poszt>K√∂z√©pcsat√°r</Poszt>
-    <N√©v>
-        <Keresztn√©v>Cristiano</Keresztn√©v>
-        <Vezet√©kn√©v>Ronaldo</Vezet√©kn√©v>
-    </N√©v>
-    <G√≥l>10</G√≥l>
-    <Mezsz√°m>7</Mezsz√°m>
-    <Sz√ºlid≈ë>1985.02.05</Sz√ºlid≈ë>
- </Labdar√∫g√≥>
- <Labdar√∫g√≥ CSk√≥d="1" Lk√≥d="RN18">
-    <Poszt>K√∂z√©pp√°ly√°s</Poszt>
-    <Poszt>V√©dekez≈ë k√∂z√©pp√°ly√°s</Poszt>
-    <N√©v>
-        <Keresztn√©v>Ruben</Keresztn√©v>
-        <Vezet√©kn√©v>Neves</Vezet√©kn√©v>
-    </N√©v>
-    <G√≥l>2</G√≥l>
-    <Mezsz√°m >18</Mezsz√°m>
-    <Sz√ºlid≈ë >1997.03.13</Sz√ºlid≈ë>
- </Labdar√∫g√≥>
- <Labdar√∫g√≥ CSk√≥d="2" Lk√≥d="TS1">
-    <Poszt>Kapus</Poszt>
-    <N√©v>
-        <Keresztn√©v>Marc-Andr√©</Keresztn√©v>
-        <Vezet√©kn√©v>ter Stegen</Vezet√©kn√©v>
-    </N√©v>
-    <G√≥l>0</G√≥l>
-    <Mezsz√°m>22</Mezsz√°m>
-    <Sz√ºlid≈ë>1992.04.05</Sz√ºlid≈ë>
- </Labdar√∫g√≥>
- <Labdar√∫g√≥ CSk√≥d="2" Lk√≥d="JK6">
-    <Poszt>K√∂z√©pp√°ly√°s</Poszt>
-    <Poszt>Jobb sz√©ls≈ë v√©d≈ë</Poszt>
-    <N√©v>
-        <Keresztn√©v>Joshua</Keresztn√©v>
-        <Vezet√©kn√©v>Kimmich</Vezet√©kn√©v>
-    </N√©v>
-    <G√≥l>3</G√≥l>
-    <Mezsz√°m>6</Mezsz√°m>
-    <Sz√ºlid≈ë>1995.02.08</Sz√ºlid≈ë>
- </Labdar√∫g√≥>
- <Labdar√∫g√≥ CSk√≥d="3" Lk√≥d="KM10">
-    <Poszt>K√∂z√©pcsat√°r</Poszt>
-    <N√©v>
-        <Keresztn√©v>Kylian</Keresztn√©v>
-        <Vezet√©kn√©v>Mbapp√©</Vezet√©kn√©v>
-    </N√©v>
-    <G√≥l>9</G√≥l>
-    <Mezsz√°m>10</Mezsz√°m>
-    <Sz√ºlid≈ë>1998.12.20</Sz√ºlid≈ë>
- </Labdar√∫g√≥>
- <Labdar√∫g√≥ CSk√≥d="3" Lk√≥d="EC25">
-    <Poszt>K√∂z√©pp√°ly√°s</Poszt>
-    <Poszt>V√©dekez≈ë k√∂z√©pp√°ly√°s</Poszt>
-    <Poszt>Bal sz√©ls≈ë v√©d≈ë</Poszt>
-    <N√©v>
-        <Keresztn√©v>Eduardo</Keresztn√©v>
-        <Vezet√©kn√©v>Camavinga</Vezet√©kn√©v>
-    </N√©v>
-    <G√≥l>3</G√≥l>
-    <Mezsz√°m>25</Mezsz√°m>
-    <Sz√ºlid≈ë>2002.11.10</Sz√ºlid≈ë>
- </Labdar√∫g√≥>
- <Labdar√∫g√≥ CSk√≥d="4" Lk√≥d="HK9">
-    <Poszt>K√∂z√©pcsat√°r</Poszt>
-    <N√©v>
-        <Keresztn√©v>Harry</Keresztn√©v>
-        <Vezet√©kn√©v>Kane</Vezet√©kn√©v>
-    </N√©v>
-    <G√≥l>7</G√≥l>
-    <Mezsz√°m>9</Mezsz√°m>
-    <Sz√ºlid≈ë>1993.07.28</Sz√ºlid≈ë>
- </Labdar√∫g√≥>
- <Labdar√∫g√≥ CSk√≥d="4" Lk√≥d="JB10">
-    <Poszt>K√∂z√©pp√°ly√°s</Poszt>
-    <N√©v>
-        <Keresztn√©v>Jude</Keresztn√©v>
-        <Vezet√©kn√©v>Belligham</Vezet√©kn√©v>
-    </N√©v>
-    <G√≥l>6</G√≥l>
-    <Mezsz√°m>10</Mezsz√°m>
-    <Sz√ºlid≈ë>2003.06.29</Sz√ºlid≈ë>
- </Labdar√∫g√≥>
- <Labdar√∫g√≥ CSk√≥d="5" Lk√≥d="LM10">
-    <Poszt>K√∂z√©pcsat√°r</Poszt>
-    <Poszt>Jobb sz√©ls≈ë csat√°r</Poszt>
-    <N√©v>
-        <Keresztn√©v>Lionel</Keresztn√©v>
-        <Vezet√©kn√©v>Messi</Vezet√©kn√©v>
-    </N√©v>
-    <G√≥l>9</G√≥l>
-    <Mezsz√°m>10</Mezsz√°m>
-    <Sz√ºlid≈ë>1987.07.24</Sz√ºlid≈ë>
- </Labdar√∫g√≥>
- <Labdar√∫g√≥ CSk√≥d="5" Lk√≥d="EM23">
-    <Poszt>Kapus</Poszt>
-    <N√©v>
-        <Keresztn√©v>Emiliano</Keresztn√©v>
-        <Vezet√©kn√©v>Martinez</Vezet√©kn√©v>
-    </N√©v>
-    <G√≥l>0</G√≥l>
-    <Mezsz√°m>23</Mezsz√°m>
-    <Sz√ºlid≈ë>1992.09.02</Sz√ºlid≈ë>
- </Labdar√∫g√≥>
- <M√©rk≈ëz√©s Hk√≥d="201" Mk√≥d="1" Tk√≥d="101">
-    <Csapat1G√≥lok >5</Csapat1G√≥lok>
-    <Csapat2G√≥lok >2</Csapat2G√≥lok>
- </M√©rk≈ëz√©s>
- <M√©rk≈ëz√©s Hk√≥d="202" Mk√≥d="2" Tk√≥d="102">
-    <Csapat1G√≥lok>0</Csapat1G√≥lok>
-    <Csapat2G√≥lok>1</Csapat2G√≥lok>
- </M√©rk≈ëz√©s>
- <M√©rk≈ëz√©s Hk√≥d="203" Mk√≥d="3" Tk√≥d="103">
-    <Csapat1G√≥lok>3</Csapat1G√≥lok>
-    <Csapat2G√≥lok>7</Csapat2G√≥lok>
- </M√©rk≈ëz√©s>
- <M√©rk≈ëz√©s Hk√≥d="204" Mk√≥d="4" Tk√≥d="104">
-    <Csapat1G√≥lok>2</Csapat1G√≥lok>
-    <Csapat2G√≥lok>1</Csapat2G√≥lok>
- </M√©rk≈ëz√©s>
- <M√©rk≈ëz√©s Hk√≥d="205" Mk√≥d="5" Tk√≥d="104">
-    <Csapat1G√≥lok>2</Csapat1G√≥lok>
-    <Csapat2G√≥lok>3</Csapat2G√≥lok>
- </M√©rk≈ëz√©s>
- <Helysz√≠n Hk√≥d="201">
-    <Stadion>
-        <N√©v>Education City Stadion</N√©v>
-        <F√©r≈ëhely>45000</F√©r≈ëhely>
-        <Tulajdonos>katari korm√°ny</Tulajdonos>
-    </Stadion>
-    <V√°ros>al-Rajj√°n</V√°ros>
- </Helysz√≠n>
- <Helysz√≠n Hk√≥d="202">
-    <Stadion>
-        <N√©v>Al Bayt Stadion</N√©v>
-        <F√©r≈ëhely>60000</F√©r≈ëhely>
-        <Tulajdonos>katari korm√°ny</Tulajdonos>
-    </Stadion>
-    <V√°ros>al-Hor</V√°ros>
- </Helysz√≠n>
- <Helysz√≠n Hk√≥d="203">
-    <Stadion>
-        <N√©v>Losza√≠li Nemzeti Stadion</N√©v>
-        <F√©r≈ëhely>80000</F√©r≈ëhely>
-        <Tulajdonos>katari korm√°ny</Tulajdonos>
-    </Stadion>
-    <V√°ros>Losza√≠l</V√°ros>
- </Helysz√≠n>
- <Helysz√≠n Hk√≥d="204">
-    <Stadion>
-        <N√©v>al-Thumama Stadion</N√©v>
-        <F√©r≈ëhely>40000</F√©r≈ëhely>
-        <Tulajdonos>katari korm√°ny</Tulajdonos>
-    </Stadion>
-    <V√°ros>al-Thumama</V√°ros>
- </Helysz√≠n>
- <Helysz√≠n Hk√≥d="205">
-    <Stadion>
-        <N√©v>El-Dzsan√∫b Stadion</N√©v>
-        <F√©r≈ëhely>40000</F√©r≈ëhely>
-        <Tulajdonos>katari korm√°ny</Tulajdonos>
-    </Stadion>
-    <V√°ros>Al-Vakra</V√°ros>
- </Helysz√≠n>
- <T√≠pus Tk√≥d="101">
-    <N√©v>Csoportm√©rk≈ëz√©s</N√©v>
- </T√≠pus>
- <T√≠pus Tk√≥d="102">
-    <N√©v>Nyolcadd√∂nt≈ë</N√©v>
- </T√≠pus>
- <T√≠pus Tk√≥d="103">
-    <N√©v>Negyedd√∂nt≈ë</N√©v>
- </T√≠pus>
- <T√≠pus Tk√≥d="104">
-    <N√©v>El≈ëd√∂nt≈ë</N√©v>
- </T√≠pus>
- <T√≠pus Tk√≥d="105">
-    <N√©v>D√∂nt≈ë</N√©v>
- </T√≠pus>
- <M√©rk≈ëzik Csapat1="1" Csapat2="2" Gy≈ëztes="1" Mk√≥d="1">
-    <D√°tum>2022.11.22</D√°tum>
-    <J√°t√©kvezet≈ë>Frank de Bleeckere</J√°t√©kvezet≈ë>
- </M√©rk≈ëzik>
- <M√©rk≈ëzik Csapat1="3" Csapat2="5" Gy≈ëztes="5" Mk√≥d="2">
-    <D√°tum>2022.11.26</D√°tum>
-    <J√°t√©kvezet≈ë>Pedro Proenca</J√°t√©kvezet≈ë>
- </M√©rk≈ëzik>
- <M√©rk≈ëzik Csapat1="2" Csapat2="1" Gy≈ëztes="2" Mk√≥d="3">
-    <D√°tum>2022.11.30</D√°tum>
-    <J√°t√©kvezet≈ë>Kim Milton Nielsen</J√°t√©kvezet≈ë>
- </M√©rk≈ëzik>
- <M√©rk≈ëzik Csapat1="4" Csapat2="5" Gy≈ëztes="4" Mk√≥d="4">
-    <D√°tum>2022.12.01</D√°tum>
-    <J√°t√©kvezet≈ë>Michel Vautrot</J√°t√©kvezet≈ë>
- </M√©rk≈ëzik>
- <M√©rk≈ëzik Csapat1="1" Csapat2="5" Gy≈ëztes="1" Mk√≥d="5">
-    <D√°tum>2022.12.18</D√°tum>
-    <J√°t√©kvezet≈ë>Oscar Ruiz</J√°t√©kvezet≈ë>
- </M√©rk≈ëzik>
-</Vil√°gbajnoks√°g_DLWGQZ>
+
+
+ <Labdar˙gÛ CSkÛd="1" LkÛd="CR7">
+  <Poszt >KˆzÈpcsat·r</Poszt>
+  <NÈv >
+   <KeresztnÈv >Cristiano</KeresztnÈv>
+   <VezetÈknÈv >Ronaldo</VezetÈknÈv>
+  </NÈv>
+  <GÛl >10</GÛl>
+  <Mezsz·m >7</Mezsz·m>
+  <Sz¸lidı >1985.02.05</Sz¸lidı>
+ </Labdar˙gÛ>
+
+ <Labdar˙gÛ CSkÛd="1" LkÛd="RN18">
+  <Poszt >KˆzÈpp·ly·s</Poszt>
+  <Poszt >VÈdekezı kˆzÈpp·ly·s</Poszt>
+  <NÈv >
+   <KeresztnÈv >Ruben</KeresztnÈv>
+   <VezetÈknÈv >Neves</VezetÈknÈv>
+  </NÈv>
+  <GÛl >2</GÛl>
+  <Mezsz·m >18</Mezsz·m>
+  <Sz¸lidı >1997.03.13</Sz¸lidı>
+ </Labdar˙gÛ>
+
+ <Labdar˙gÛ CSkÛd="2" LkÛd="TS1">
+  <Poszt >Kapus</Poszt>
+  <NÈv >
+   <KeresztnÈv >Marc-AndrÈ</KeresztnÈv>
+   <VezetÈknÈv >ter Stegen</VezetÈknÈv>
+  </NÈv>
+  <GÛl >0</GÛl>
+  <Mezsz·m >22</Mezsz·m>
+  <Sz¸lidı >1992.04.05</Sz¸lidı>
+ </Labdar˙gÛ>
+
+ <Labdar˙gÛ CSkÛd="2" LkÛd="JK6">
+  <Poszt >KˆzÈpp·ly·s</Poszt>
+  <Poszt >Jobb szÈlsı vÈdı</Poszt>
+  <NÈv >
+   <KeresztnÈv >Joshua</KeresztnÈv>
+   <VezetÈknÈv >Kimmich</VezetÈknÈv>
+  </NÈv>
+  <GÛl >3</GÛl>
+  <Mezsz·m >6</Mezsz·m>
+  <Sz¸lidı >1995.02.08</Sz¸lidı>
+ </Labdar˙gÛ>
+
+ <Labdar˙gÛ CSkÛd="3" LkÛd="KM10">
+  <Poszt >KˆzÈpcsat·r</Poszt>
+  <NÈv >
+   <KeresztnÈv >Kylian</KeresztnÈv>
+   <VezetÈknÈv >MbappÈ</VezetÈknÈv>
+  </NÈv>
+  <GÛl >9</GÛl>
+  <Mezsz·m >10</Mezsz·m>
+  <Sz¸lidı >1998.12.20</Sz¸lidı>
+ </Labdar˙gÛ>
+
+ <Labdar˙gÛ CSkÛd="3" LkÛd="EC25">
+  <Poszt >KˆzÈpp·ly·s</Poszt>
+  <Poszt >VÈdekezı kˆzÈpp·ly·s</Poszt>
+  <Poszt >Bal szÈlsı vÈdı</Poszt>
+  <NÈv >
+   <KeresztnÈv >Eduardo</KeresztnÈv>
+   <VezetÈknÈv >Camavinga</VezetÈknÈv>
+  </NÈv>
+  <GÛl >3</GÛl>
+  <Mezsz·m >25</Mezsz·m>
+  <Sz¸lidı >2002.11.10</Sz¸lidı>
+ </Labdar˙gÛ>
+
+ <Labdar˙gÛ CSkÛd="4" LkÛd="HK9">
+  <Poszt >KˆzÈpcsat·r</Poszt>
+  <NÈv >
+   <KeresztnÈv >Harry</KeresztnÈv>
+   <VezetÈknÈv >Kane</VezetÈknÈv>
+  </NÈv>
+  <GÛl >7</GÛl>
+  <Mezsz·m >9</Mezsz·m>
+  <Sz¸lidı >1993.07.28</Sz¸lidı>
+ </Labdar˙gÛ>
+
+ <Labdar˙gÛ CSkÛd="4" LkÛd="JB10">
+  <Poszt >KˆzÈpp·ly·s</Poszt>
+  <NÈv >
+   <KeresztnÈv >Jude</KeresztnÈv>
+   <VezetÈknÈv >Belligham</VezetÈknÈv>
+  </NÈv>
+  <GÛl >6</GÛl>
+  <Mezsz·m >10</Mezsz·m>
+  <Sz¸lidı >2003.06.29</Sz¸lidı>
+ </Labdar˙gÛ>
+
+ <Labdar˙gÛ CSkÛd="5" LkÛd="LM10">
+  <Poszt >KˆzÈpcsat·r</Poszt>
+  <Poszt >Jobb szÈlsı csat·r</Poszt>
+  <NÈv >
+   <KeresztnÈv >Lionel</KeresztnÈv>
+   <VezetÈknÈv >Messi</VezetÈknÈv>
+  </NÈv>
+  <GÛl >9</GÛl>
+  <Mezsz·m >10</Mezsz·m>
+  <Sz¸lidı >1987.07.24</Sz¸lidı>
+ </Labdar˙gÛ>
+
+ <Labdar˙gÛ CSkÛd="5" LkÛd="EM23">
+  <Poszt >Kapus</Poszt>
+  <NÈv >
+   <KeresztnÈv >Emiliano</KeresztnÈv>
+   <VezetÈknÈv >Martinez</VezetÈknÈv>
+  </NÈv>
+  <GÛl >0</GÛl>
+  <Mezsz·m >23</Mezsz·m>
+  <Sz¸lidı >1992.09.02</Sz¸lidı>
+ </Labdar˙gÛ>
+
+
+ <MÈrkızÈs HkÛd="201" MkÛd="1" TkÛd="101">
+  <Csapat1GÛlok >5</Csapat1GÛlok>
+  <Csapat2GÛlok >2</Csapat2GÛlok>
+ </MÈrkızÈs>
+
+ <MÈrkızÈs HkÛd="202" MkÛd="2" TkÛd="102">
+  <Csapat1GÛlok >0</Csapat1GÛlok>
+  <Csapat2GÛlok >1</Csapat2GÛlok>
+ </MÈrkızÈs>
+
+ <MÈrkızÈs HkÛd="203" MkÛd="3" TkÛd="103">
+  <Csapat1GÛlok >3</Csapat1GÛlok>
+  <Csapat2GÛlok >7</Csapat2GÛlok>
+ </MÈrkızÈs>
+
+ <MÈrkızÈs HkÛd="204" MkÛd="4" TkÛd="104">
+  <Csapat1GÛlok >2</Csapat1GÛlok>
+  <Csapat2GÛlok >1</Csapat2GÛlok>
+ </MÈrkızÈs>
+
+ <MÈrkızÈs HkÛd="205" MkÛd="5" TkÛd="104">
+  <Csapat1GÛlok >2</Csapat1GÛlok>
+  <Csapat2GÛlok >3</Csapat2GÛlok>
+ </MÈrkızÈs>
+
+
+ <HelyszÌn HkÛd="201">
+  <Stadion >
+   <NÈv >Education City Stadion</NÈv>
+   <FÈrıhely >45000</FÈrıhely>
+   <Tulajdonos >katari korm·ny</Tulajdonos>
+  </Stadion>
+  <V·ros >al-Rajj·n</V·ros>
+ </HelyszÌn>
+
+ <HelyszÌn HkÛd="202">
+  <Stadion >
+   <NÈv >Al Bayt Stadion</NÈv>
+   <FÈrıhely >60000</FÈrıhely>
+   <Tulajdonos >katari korm·ny</Tulajdonos>
+  </Stadion>
+  <V·ros >al-Hor</V·ros>
+ </HelyszÌn>
+
+ <HelyszÌn HkÛd="203">
+  <Stadion >
+   <NÈv >LoszaÌli Nemzeti Stadion</NÈv>
+   <FÈrıhely >80000</FÈrıhely>
+   <Tulajdonos >katari korm·ny</Tulajdonos>
+  </Stadion>
+  <V·ros >LoszaÌl</V·ros>
+ </HelyszÌn>
+
+ <HelyszÌn HkÛd="204">
+  <Stadion >
+   <NÈv >al-Thumama Stadion</NÈv>
+   <FÈrıhely >40000</FÈrıhely>
+   <Tulajdonos >katari korm·ny</Tulajdonos>
+  </Stadion>
+  <V·ros >al-Thumama</V·ros>
+ </HelyszÌn>
+
+ <HelyszÌn HkÛd="205">
+  <Stadion >
+   <NÈv >El-Dzsan˙b Stadion</NÈv>
+   <FÈrıhely >40000</FÈrıhely>
+   <Tulajdonos >katari korm·ny</Tulajdonos>
+  </Stadion>
+  <V·ros >Al-Vakra</V·ros>
+ </HelyszÌn>
+
+
+ <TÌpus TkÛd="101">
+  <NÈv >CsoportmÈrkızÈs</NÈv>
+ </TÌpus>
+
+ <TÌpus TkÛd="102">
+  <NÈv >Nyolcaddˆntı</NÈv>
+ </TÌpus>
+
+ <TÌpus TkÛd="103">
+  <NÈv >Negyeddˆntı</NÈv>
+ </TÌpus>
+
+ <TÌpus TkÛd="104">
+  <NÈv >Elıdˆntı</NÈv>
+ </TÌpus>
+
+ <TÌpus TkÛd="105">
+  <NÈv >Dˆntı</NÈv>
+ </TÌpus>
+
+
+ <MÈrkızik Csapat1="1" Csapat2="2" Gyıztes="1" MkÛd="1">
+  <D·tum >2022.11.22</D·tum>
+  <J·tÈkvezetı >Frank de Bleeckere</J·tÈkvezetı>
+ </MÈrkızik>
+
+ <MÈrkızik Csapat1="3" Csapat2="5" Gyıztes="5" MkÛd="2">
+  <D·tum >2022.11.26</D·tum>
+  <J·tÈkvezetı >Pedro Proenca</J·tÈkvezetı>
+ </MÈrkızik>
+
+ <MÈrkızik Csapat1="2" Csapat2="1" Gyıztes="2" MkÛd="3">
+  <D·tum >2022.11.30</D·tum>
+  <J·tÈkvezetı >Kim Milton Nielsen</J·tÈkvezetı>
+ </MÈrkızik>
+
+ <MÈrkızik Csapat1="4" Csapat2="5" Gyıztes="4" MkÛd="4">
+  <D·tum >2022.12.01</D·tum>
+  <J·tÈkvezetı >Michel Vautrot</J·tÈkvezetı>
+ </MÈrkızik>
+
+ <MÈrkızik Csapat1="1" Csapat2="5" Gyıztes="1" MkÛd="5">
+  <D·tum >2022.12.18</D·tum>
+  <J·tÈkvezetı >Oscar Ruiz</J·tÈkvezetı>
+ </MÈrkızik>
+
+
+</Vil·gbajnoks·g_DLWGQZ>
