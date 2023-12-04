@@ -25,7 +25,7 @@ public class DOMQueryDLWGQZ {
 			queryXMLAllFootballersData(document,"Labdarúgó");
 			//2. Az összes csapat neve
 			queryXMLAllTeamsName(document,"Csapat");
-			//3. Mérkőzés dátuma és játékvezető kiírása
+			//3. Az összes mérkőzés időpontja és játékvezető kiírása
 			queryXMLAllMatchesDateAndReferee(document,"Csapat");
 			//4. '21'-es ID-val rendelkező logó tervezőjének neve
 			queryXMLDesignerNameWithID21(document,"Logó");
@@ -64,7 +64,7 @@ public class DOMQueryDLWGQZ {
 	    for(int i = 0; i < logoNodeList.getLength(); i++) {
 	    	Node logoNode = logoNodeList.item(i);
 	      	
-	    	if(logoNode.getNodeType() == Node.ELEMENT_NODE) {
+	    	if(logoNode.getNodeType() == Node.ELEMENT_NODE && logoNode.getNodeName().equals("Logó")) {
 	    		Element logoElem = (Element) logoNode;
 	    		String logokodAttribute = logoElem.getAttribute("LOGÓkód");
 	    		if(logokodAttribute.equals(logokod)) {
@@ -77,22 +77,22 @@ public class DOMQueryDLWGQZ {
 	}
 
 	private static void queryXMLAllMatchesDateAndReferee(Document document, String string) {
-		System.out.println("\n--3.-Mérkőzés-dátuma-és-játékvezető-kiírása--");
+		System.out.println("\n--3.-Az összes mérkőzés-időpontja-és-játékvezető-kiírása--");
 	    NodeList merkozikNodeList = document.getElementsByTagName("Mérkőzik");
 	    
 	    for(int i = 0; i < merkozikNodeList.getLength(); i++) {
 	    	Node merkozikNode = merkozikNodeList.item(i);
 	    	
-	    	Element merkozikElem = (Element) merkozikNode;
-	    	
-	    	Node datumNode = merkozikElem.getElementsByTagName("Dátum").item(0);
-    		String datum = datumNode.getTextContent();
-	    	System.out.println("A mérkőzés dátuma: " + datum);  		
-	    	Node jatekvezetoNode = merkozikElem.getElementsByTagName("Játékvezető").item(0);
-    		String jatekvezeto = jatekvezetoNode.getTextContent();
-	    	System.out.println("A játékvezető neve: " + jatekvezeto);
-	    	System.out.println("---------------------------------------");
-	    		
+	    	if(merkozikNode.getNodeType() == Node.ELEMENT_NODE && merkozikNode.getNodeName().equals("Mérkőzik")) {
+	    		Element merkozikElem = (Element) merkozikNode;		    	
+		    	Node datumNode = merkozikElem.getElementsByTagName("Dátum").item(0);
+	    		String datum = datumNode.getTextContent();
+		    	System.out.println("A mérkőzés dátuma: " + datum);  		
+		    	Node jatekvezetoNode = merkozikElem.getElementsByTagName("Játékvezető").item(0);
+	    		String jatekvezeto = jatekvezetoNode.getTextContent();
+		    	System.out.println("A játékvezető neve: " + jatekvezeto);
+		    	System.out.println("---------------------------------------");  		
+	    	}    		
 	    }    
 	}
 	    	
@@ -104,8 +104,7 @@ public class DOMQueryDLWGQZ {
 	    	Node csapatNode = csapatNodeList.item(i);
 	    		    	
 	    	if(csapatNode.getNodeType() == Node.ELEMENT_NODE && csapatNode.getNodeName().equals("Csapat")) {
-	    		Element csapatElem = (Element) csapatNode;
-	    		
+	    		Element csapatElem = (Element) csapatNode;	    		
 	    		Node csapatnevNode = csapatElem.getElementsByTagName("Név").item(0);
 	    		String csapatnev = csapatnevNode.getTextContent();
 	    		System.out.println("Csapat neve: " + csapatnev);
