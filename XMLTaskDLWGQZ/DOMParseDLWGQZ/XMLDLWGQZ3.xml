@@ -1,0 +1,281 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Világbajnokság_DLWGQZ xmlns:xs="http://www.w3.org/2001/XMLSchema-instance" xs:noNamespaceSchemaLocation="XMLSchemaDLWGQZ.xsd">
+    <!--Csapatok-->
+    <Csapat CSkód="1" Csapatkapitány="CR7" CSOPkód="11" LOGÓkód="21">
+        <Vezetõedzõ>Roberto Martínez</Vezetõedzõ>
+        <Név>Portugália</Név>    
+    </Csapat>   
+    <Csapat CSkód="2" Csapatkapitány="TS1" CSOPkód="12" LOGÓkód="22">
+        <Vezetõedzõ>Hansi Flick</Vezetõedzõ>
+        <Név>Németország</Név>    
+    </Csapat> 
+    <Csapat CSkód="3" Csapatkapitány="KM10" CSOPkód="13" LOGÓkód="23">
+        <Vezetõedzõ>Didier Deschamp</Vezetõedzõ>
+        <Név>Franciaország</Név>    
+    </Csapat> 
+    <Csapat CSkód="4" Csapatkapitány="HK9" CSOPkód="14" LOGÓkód="24">
+        <Vezetõedzõ>Gareth Southgate</Vezetõedzõ>
+        <Név>Anglia</Név>    
+    </Csapat> 
+    <Csapat CSkód="5" Csapatkapitány="LM10" CSOPkód="15" LOGÓkód="25">
+        <Vezetõedzõ>Lionel Scaloni</Vezetõedzõ>
+        <Név>Argentína</Név>    
+    </Csapat> 
+    <!--Logók-->
+    <Logó LOGÓkód="21">
+        <Színek>Piros</Színek>
+        <Színek>Kék</Színek>
+        <Színek>Zöld</Színek>
+        <Tervezõ>António Modesto</Tervezõ>
+    </Logó>
+    <Logó LOGÓkód="22">
+        <Színek>Fekete</Színek>
+        <Színek>Piros</Színek>
+        <Színek>Arany</Színek>
+        <Tervezõ>Anton Stankowski</Tervezõ>
+    </Logó>
+    <Logó LOGÓkód="23">
+        <Színek>Kék</Színek>
+        <Színek>Fehér</Színek>
+        <Színek>Piros</Színek>
+        <Tervezõ>Raymond Savignac</Tervezõ>
+    </Logó>
+    <Logó LOGÓkód="24">
+        <Színek>Fehér</Színek>
+        <Színek>Kék</Színek>
+        <Színek>Piros</Színek>
+        <Tervezõ>William C. Gibbons</Tervezõ>
+    </Logó>
+    <Logó LOGÓkód="25">
+        <Színek>Égkék</Színek>
+        <Színek>Fehér</Színek>
+        <Színek>Sárga</Színek>
+        <Tervezõ>Salvador Dellutri</Tervezõ>
+    </Logó>
+    <!--Csoportok-->
+    <Csoport CSOPkód="11">
+        <Jelölés>A</Jelölés>
+    </Csoport>
+    <Csoport CSOPkód="12">
+        <Jelölés>B</Jelölés>
+    </Csoport>
+    <Csoport CSOPkód="13">
+        <Jelölés>C</Jelölés>
+    </Csoport>
+    <Csoport CSOPkód="14">
+        <Jelölés>D</Jelölés>
+    </Csoport>
+    <Csoport CSOPkód="15">
+        <Jelölés>E</Jelölés>
+    </Csoport>
+    <!--Labdarúgók-->
+    <!--PORTUGÁL Labdarúgók-->
+    <Labdarúgó Lkód="CR7" CSkód="1">
+        <Poszt>Középcsatár</Poszt>
+        <Név>
+            <Keresztnév>Cristiano</Keresztnév>
+            <Vezetéknév>Ronaldo</Vezetéknév>
+        </Név>
+        <Gól>10</Gól>
+        <Mezszám>7</Mezszám>
+        <Szülidõ>1985.02.05</Szülidõ>
+    </Labdarúgó>
+    <Labdarúgó Lkód="RN18" CSkód="1">
+        <Poszt>Középpályás</Poszt>
+        <Poszt>Védekezõ középpályás</Poszt>
+        <Név>
+            <Keresztnév>Ruben</Keresztnév>
+            <Vezetéknév>Neves</Vezetéknév>
+        </Név>
+        <Gól>2</Gól>
+        <Mezszám>18</Mezszám>
+        <Szülidõ>1997.03.13</Szülidõ>
+    </Labdarúgó>
+    <!--NÉMET Labdarúgók-->
+    <Labdarúgó Lkód="TS1" CSkód="2">
+        <Poszt>Kapus</Poszt>
+        <Név>
+            <Keresztnév>Marc-André</Keresztnév>
+            <Vezetéknév>ter Stegen</Vezetéknév>
+        </Név>
+        <Gól>0</Gól>
+        <Mezszám>22</Mezszám>
+        <Szülidõ>1992.04.05</Szülidõ>
+    </Labdarúgó>
+    <Labdarúgó Lkód="JK6" CSkód="2">
+        <Poszt>Középpályás</Poszt>
+        <Poszt>Jobb szélsõ védõ</Poszt>
+        <Név>
+            <Keresztnév>Joshua</Keresztnév>
+            <Vezetéknév>Kimmich</Vezetéknév>
+        </Név>
+        <Gól>3</Gól>
+        <Mezszám>6</Mezszám>
+        <Szülidõ>1995.02.08</Szülidõ>
+    </Labdarúgó>
+    <!--FRANCIA Labdarúgók-->
+    <Labdarúgó Lkód="KM10" CSkód="3">
+        <Poszt>Középcsatár</Poszt>
+        <Név>
+            <Keresztnév>Kylian</Keresztnév>
+            <Vezetéknév>Mbappé</Vezetéknév>
+        </Név>
+        <Gól>9</Gól>
+        <Mezszám>10</Mezszám>
+        <Szülidõ>1998.12.20</Szülidõ>
+    </Labdarúgó>
+    <Labdarúgó Lkód="EC25" CSkód="3">
+        <Poszt>Középpályás</Poszt>
+        <Poszt>Védekezõ középpályás</Poszt>
+        <Poszt>Bal szélsõ védõ</Poszt>
+        <Név>
+            <Keresztnév>Eduardo</Keresztnév>
+            <Vezetéknév>Camavinga</Vezetéknév>
+        </Név>
+        <Gól>3</Gól>
+        <Mezszám>25</Mezszám>
+        <Szülidõ>2002.11.10</Szülidõ>
+    </Labdarúgó>
+    <!--ANGOL Labdarúgók-->
+    <Labdarúgó Lkód="HK9" CSkód="4">
+        <Poszt>Középcsatár</Poszt>
+        <Név>
+            <Keresztnév>Harry</Keresztnév>
+            <Vezetéknév>Kane</Vezetéknév>
+        </Név>
+        <Gól>7</Gól>
+        <Mezszám>9</Mezszám>
+        <Szülidõ>1993.07.28</Szülidõ>
+    </Labdarúgó>
+    <Labdarúgó Lkód="JB10" CSkód="4">
+        <Poszt>Középpályás</Poszt>
+        <Név>
+            <Keresztnév>Jude</Keresztnév>
+            <Vezetéknév>Bellingham</Vezetéknév>
+        </Név>
+        <Gól>6</Gól>
+        <Mezszám>10</Mezszám>
+        <Szülidõ>2003.06.29</Szülidõ>
+    </Labdarúgó>
+    <!--ARGENTÍN Labdarúgók-->
+    <Labdarúgó Lkód="LM10" CSkód="5">
+        <Poszt>Középcsatár</Poszt>
+        <Poszt>Jobb szélsõ csatár</Poszt>
+        <Név>
+            <Keresztnév>Lionel</Keresztnév>
+            <Vezetéknév>Messi</Vezetéknév>
+        </Név>
+        <Gól>9</Gól>
+        <Mezszám>10</Mezszám>
+        <Szülidõ>1987.07.24</Szülidõ>
+    </Labdarúgó>
+    <Labdarúgó Lkód="EM23" CSkód="5">
+        <Poszt>Kapus</Poszt>
+        <Név>
+            <Keresztnév>Emiliano</Keresztnév>
+            <Vezetéknév>Martinez</Vezetéknév>
+        </Név>
+        <Gól>0</Gól>
+        <Mezszám>23</Mezszám>
+        <Szülidõ>1992.09.02</Szülidõ>
+    </Labdarúgó>
+    <!--Mérkõzések-->
+    <Mérkõzés Mkód="1" Tkód="101" Hkód="201">
+        <Csapat1Gólok>5</Csapat1Gólok>
+        <Csapat2Gólok>2</Csapat2Gólok>
+    </Mérkõzés>
+    <Mérkõzés Mkód="2" Tkód="102" Hkód="202">
+        <Csapat1Gólok>0</Csapat1Gólok>
+        <Csapat2Gólok>1</Csapat2Gólok>
+    </Mérkõzés>
+    <Mérkõzés Mkód="3" Tkód="103" Hkód="203">
+        <Csapat1Gólok>3</Csapat1Gólok>
+        <Csapat2Gólok>7</Csapat2Gólok>
+    </Mérkõzés>
+    <Mérkõzés Mkód="4" Tkód="104" Hkód="204">
+        <Csapat1Gólok>2</Csapat1Gólok>
+        <Csapat2Gólok>1</Csapat2Gólok>
+    </Mérkõzés>
+    <Mérkõzés Mkód="5" Tkód="105" Hkód="205">
+        <Csapat1Gólok>2</Csapat1Gólok>
+        <Csapat2Gólok>3</Csapat2Gólok>
+    </Mérkõzés>
+    <!--Helyszínek-->
+    <Helyszín Hkód="201">
+        <Stadion>
+            <Név>Education City Stadion</Név>
+            <Férõhely>45000</Férõhely>
+            <Tulajdonos>katari kormány</Tulajdonos>
+        </Stadion>
+        <Város>al-Rajján</Város>
+    </Helyszín>
+    <Helyszín Hkód="202">
+        <Stadion>
+            <Név>Al Bayt Stadion</Név>
+            <Férõhely>60000</Férõhely>
+            <Tulajdonos>katari kormány</Tulajdonos>
+        </Stadion>
+        <Város>al-Hor</Város>
+    </Helyszín>
+    <Helyszín Hkód="203">
+        <Stadion>
+            <Név>Loszaíli Nemzeti Stadion</Név>
+            <Férõhely>80000</Férõhely>
+            <Tulajdonos>katari kormány</Tulajdonos>
+        </Stadion>
+        <Város>Loszaíl</Város>
+    </Helyszín>
+    <Helyszín Hkód="204">
+        <Stadion>
+            <Név>al-Thumama Stadion</Név>
+            <Férõhely>40000</Férõhely>
+            <Tulajdonos>katari kormány</Tulajdonos>
+        </Stadion>
+        <Város>al-Thumama</Város>
+    </Helyszín>
+    <Helyszín Hkód="205">
+        <Stadion>
+            <Név>El-Dzsanúb Stadion</Név>
+            <Férõhely>40000</Férõhely>
+            <Tulajdonos>katari kormány</Tulajdonos>
+        </Stadion>
+        <Város>Al-Vakra</Város>
+    </Helyszín>
+    <!--Típusok-->
+    <Típus Tkód="101">
+        <Név>Csoportmérkõzés</Név>
+    </Típus>
+    <Típus Tkód="102">  
+        <Név>Nyolcaddöntõ</Név>
+    </Típus>
+    <Típus Tkód="103">
+        <Név>Negyeddöntõ</Név>
+    </Típus>
+    <Típus Tkód="104">
+        <Név>Elõdöntõ</Név>
+    </Típus>
+    <Típus Tkód="105">
+        <Név>Döntõ</Név>
+    </Típus>
+    <!--Mérkõzik kapcsolat-->
+    <Mérkõzik Mkód="1" Csapat1="1" Csapat2="2" Gyõztes="1">
+        <Dátum>2022.11.22</Dátum>
+        <Játékvezetõ>Frank de Bleeckere</Játékvezetõ>
+    </Mérkõzik>
+    <Mérkõzik Mkód="2" Csapat1="3" Csapat2="5" Gyõztes="5">
+        <Dátum>2022.11.26</Dátum>
+        <Játékvezetõ>Pedro Proenca</Játékvezetõ>
+    </Mérkõzik>
+    <Mérkõzik Mkód="3" Csapat1="2" Csapat2="1" Gyõztes="2">
+        <Dátum>2022.11.30</Dátum>
+        <Játékvezetõ>Kim Milton Nielsen</Játékvezetõ>
+    </Mérkõzik>
+    <Mérkõzik Mkód="4" Csapat1="4" Csapat2="5" Gyõztes="4">
+        <Dátum>2022.12.01</Dátum>
+        <Játékvezetõ>Michel Vautrot</Játékvezetõ>
+    </Mérkõzik>
+    <Mérkõzik Mkód="5" Csapat1="1" Csapat2="5" Gyõztes="1">
+        <Dátum>2022.12.18</Dátum>
+        <Játékvezetõ>Oscar Ruiz</Játékvezetõ>
+    </Mérkõzik>
+</Világbajnokság_DLWGQZ>
