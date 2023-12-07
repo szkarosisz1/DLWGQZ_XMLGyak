@@ -1,8 +1,6 @@
 package domdlwgqz1115;
 
 import java.io.File;
-import java.io.FileWriter;
-import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -11,64 +9,149 @@ import javax.xml.parsers.DocumentBuilderFactory;
 
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
+import org.w3c.dom.NamedNodeMap;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
 
 public class DomQueryDLWGQZ {
     public static void main(String[] args) {
-        try {
-
-            // a.) Kérdezze le a kurzusok nevét egy listába, majd írja a konzolra!
-            File xmlFile = new File("./DLWGQZ_kurzusfelvetel.xml");
+        try { 
+            File xmlFile = new File("./orarendDLWGQZ.xml");
             DocumentBuilderFactory dbFactory = DocumentBuilderFactory.newInstance();
             DocumentBuilder dBuilder = dbFactory.newDocumentBuilder();
-            Document doc = dBuilder.parse(xmlFile);
-            doc.getDocumentElement().normalize();
-            List<String> kurzusNevek = getKurzusNevek(doc);         
-            System.out.println("Kurzusnév: " + kurzusNevek);
-
-            //b.) Kérdezze le az orarendNeptunkod.xml dokumentum első példányát és írja ki strukturált formában a konzolra és egy fájlba.
-                        
+            Document document = dBuilder.parse(xmlFile);
+            document.getDocumentElement().normalize();
+            DOMQuery query = new DOMQuery();
+			List<String> courseNames = query.getCourseNames(document);
+			//a.)
+			System.out.println("a) Kurzusok: "+courseNames+"\n");
+			//b.)
+			System.out.println("b) Az első elem:");
+			String firstInstance = query.getFirst(document);
+			System.out.println(firstInstance+"\n");
+			//c.)
+			System.out.println("c) Oktatók: "+query.getTeachers(document)+"\n");
+			//d.)
+			System.out.println("d) Kurzusok időpontjai: "+query.getTimes(document));      
         } catch (Exception e) {
             e.printStackTrace();
         }
     }
 
-     private static List<String> getKurzusNevek(Document doc) {
-        List<String> kurzusNevek = new ArrayList<>();
-        NodeList kurzusNodeList = doc.getElementsByTagName("kurzusnev");
+    private static class DOMQuery{
+        public List<String> getCourseNames(Document document){
+        List<String> courseNames = new ArrayList<>();
+        Element root = document.getDocumentElement();
+         NodeList courses = root.getElementsByTagName("ora");
 
-        for (int i = 0; i < kurzusNodeList.getLength(); i++) {
-            Node node = kurzusNodeList.item(i);
-
-            if (node.getNodeType() == Node.ELEMENT_NODE) {
-                Element element = (Element) node;
-                kurzusNevek.add(element.getTextContent());
+        for(int i = 0; i<courses.getLength(); i++) {
+            Node course = courses.item(i);
+            NodeList names = ((Element)course).getElementsByTagName("targy");
+            for(int j = 0; j < names.getLength(); j++) {
+                if(!courseNames.contains(names.item(j).getTextContent())) {
+                    courseNames.add(names.item(j).getTextContent());
+                }
             }
         }
-
-        return kurzusNevek;
-    }
-    
-    private static void writeElementToFile(Element element, String fileName) throws IOException {
-        FileWriter writer = new FileWriter(fileName);
-        writeElementToFile(element, writer, 0);
-        writer.close();
-    }
-
-    private static void writeElementToFile(Element element, FileWriter writer, int indent) throws IOException {
-        for (int i = 0; i < indent; i++) {
-            writer.append("  ");
+            return courseNames;
         }
-        writer.append(element.getTagName()).append(": ").append(element.getTextContent()).append("\n");
 
-        NodeList childNodes = element.getChildNodes();
-        for (int i = 0; i < childNodes.getLength(); i++) {
-            Node node = childNodes.item(i);
-            if (node.getNodeType() == Node.ELEMENT_NODE) {
-                writeElementToFile((Element) node, writer, indent + 1);
+        public String getFirst(Document document) {
+            Element root = document.getDocumentElement();
+            Node firstCourse = root.getElementsByTagName("ora").item(0);
+        
+            return writeCourse(firstCourse);
+        }
+
+        public List<String> getTeachers(Document document){
+            List<String> teacherNames = new ArrayList<>();
+            Element root = document.getDocumentElement();
+            NodeList courses = root.getElementsByTagName("ora");
+
+            for(int i = 0; i < courses.getLength(); i++) {
+                Node course = courses.item(i);
+                Node name = ((Element)course).getElementsByTagName("oktato").item(0);
+                if(!teacherNames.contains(name.getTextContent())) {
+                    teacherNames.add(name.getTextContent());
+                }
             }
+            return teacherNames;
+        }
+
+        public List<String> getTimes(Document document){
+            List<String> times = new ArrayList<>();
+            Element root = document.getDocumentElement();
+            NodeList courses = root.getElementsByTagName("ora");
+
+            for(int i = 0; i < courses.getLength(); i++) {
+                Node course = courses.item(i);
+                Node time = ((Element)course).getElementsByTagName("idopont").item(0);
+                Element day = (Element)((Element)time).getElementsByTagName("nap").item(0);
+                Element from = (Element)((Element)time).getElementsByTagName("tol").item(0);
+                Element to = (Element) ((Element)time).getElementsByTagName("ig").item(0);
+                times.add(day.getTextContent()+" "+from.getTextContent()+"-"+to.getTextContent());
+            }
+            return times;
+        }
+
+        private String writeCourse(Node courseIn) {
+            String output = "";
+            String indentStr="   ";
+            int indent = 0;
+            Element course = (Element)courseIn;
+            output += (indentStr.repeat(indent)+"<ora");
+            NamedNodeMap attributes = course.getAttributes();
+            output += printAttributes(attributes);
+                
+            Element subject = (Element) course.getElementsByTagName("targy").item(0);
+            indent++;
+            output += (indentStr.repeat(indent)+"<targy>"+subject.getTextContent()+"</targy>\n");
+                
+            Element time = (Element) course.getElementsByTagName("idopont").item(0);
+            output += printTime(time, indent, indentStr);
+                
+            Element place = (Element) course.getElementsByTagName("helyszin").item(0);
+            output += (indentStr.repeat(indent)+"<helyszin>"+place.getTextContent()+"</helyszin>\n");
+            Element teacher = (Element) course.getElementsByTagName("oktato").item(0);
+            output += (indentStr.repeat(indent)+"<oktato>"+teacher.getTextContent()+"</oktato>\n");
+            Element major = (Element) course.getElementsByTagName("szak").item(0);
+            output += (indentStr.repeat(indent)+"<szak>"+major.getTextContent()+"</szak>\n");
+            indent--;
+            output += (indentStr.repeat(indent)+"</ora>");
+
+            return output;
+        }
+
+        private static String printTime(Element time, int indent, String indentStr) {
+            String output = "";
+            output += (indentStr.repeat(indent)+"<idopont>\n");
+            Element day = (Element) time.getElementsByTagName("nap").item(0);
+            Element from = (Element) time.getElementsByTagName("tol").item(0);
+            Element to = (Element) time.getElementsByTagName("ig").item(0);
+            indent++;
+            output += (indentStr.repeat(indent)+"<nap>"+day.getTextContent()+"</nap>\n");
+            output += (indentStr.repeat(indent)+"<tol>"+from.getTextContent()+"</tol>\n");
+            output += (indentStr.repeat(indent)+"<ig>"+to.getTextContent()+"</ig>\n");
+            indent--;
+            output += (indentStr.repeat(indent)+"</idopont>\n");
+            return output;
+        }
+
+        private static String printAttributes(NamedNodeMap attributes) {
+            String output = "";
+            if(attributes.getLength() == 0) {
+                output += (">\n");
+            }else {
+                output+=(" ");
+                for(int i = 0; i < attributes.getLength(); i++) {
+                    output += (attributes.item(i).getNodeName()+"=\""+attributes.item(i).getNodeValue()+"\"");
+                    if(i != attributes.getLength()-1) {
+                        output += (" ");
+                    }
+                }
+                output += (">\n");
+            }
+                return output;		
         }
     }
-
 }
