@@ -121,9 +121,9 @@ public class DomModifyDLWGQZ {
 
         root.appendChild(newClass);
     }
-    
-    private static void outputDocument(Document doc, Transformer transformer, String outputPath) throws TransformerException, IOException {
-        DOMSource source = new DOMSource(doc);
+
+    private static void outputDocument(Document document, Transformer transformer, String outputPath) throws TransformerException, IOException {
+        DOMSource source = new DOMSource(document);
         StreamResult consoleResult = new StreamResult(System.out);
         StreamResult fileResult = new StreamResult(new File(outputPath));
 
